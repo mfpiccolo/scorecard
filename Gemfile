@@ -25,6 +25,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+# Static Pages
+gem "high_voltage"
+gem "foreigner"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
@@ -51,6 +54,7 @@ group :development do
   gem 'foreman'
   gem 'guard-bundler'
   gem 'guard-rails'
+  gem 'guard-minitest'
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'rb-fchange', :require=>false
@@ -65,6 +69,5 @@ end
 group :test do
   gem 'capybara'
   gem 'minitest-spec-rails'
-  gem 'minitest-wscolor'
 end
 
